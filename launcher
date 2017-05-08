@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "[*] Start script manager"
+
+case "$1" in
+  "dummy"  ) echo "[*] All works correct! Nya ^_^";;
+  "test"   ) python2 test.py;;
+  "shell"  ) bash;;
+  *        ) echo "Unknown command"; exit 1;;
+esac
+
+echo "[*] Done"
+exit 0
